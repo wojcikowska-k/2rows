@@ -1,0 +1,31 @@
+
+
+
+  h1, h2 {
+    font-family: Lato;
+  }
+  
+  div {
+    height: 550px;
+    width: 600px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style: none;
+    display:grid;
+  grid-auto-flow:column dense; 
+  grid-template-rows:50px 50px;
+  grid-auto-columns:50px;
+  }
+
+  li {
+    background-color: aqua;
+  }
+  
+  li:nth-child(4n + 2) {
+    grid-row:1;
+  }
